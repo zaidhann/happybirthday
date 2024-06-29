@@ -1,21 +1,6 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
-    Swal.fire({
-        title: 'Do you want to play music in the background?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.querySelector('.song').play();
-            animationTimeline();
-        } else {
-            animationTimeline();
-        }
-    });
+    animationTimeline();
 });
 
 
@@ -256,6 +241,7 @@ const animationTimeline = () => {
         zIndex: "-1",
     })
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+    .staggerFrom(".nine button", 1, ideaTextTrans, 1.2)
     .to(
         ".last-smile",
         0.5, {
@@ -266,7 +252,9 @@ const animationTimeline = () => {
 
     // Restart Animation on click
     const replyBtn = document.getElementById("replay");
+    
     replyBtn.addEventListener("click", () => {
         tl.restart();
+        
     });
 }
