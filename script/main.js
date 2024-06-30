@@ -1,6 +1,23 @@
 // trigger to play music in the background with sweetalert
+
+    
 window.addEventListener('load', () => {
-    animationTimeline();
+    Swal.fire({
+        title: '^^',
+        icon: 'warning',
+        showCancelButton: false,
+        confirmButtonColor: '#3085d6',
+        
+        confirmButtonText: 'Ấn đây đii',
+        
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.querySelector('.song').play();
+            animationTimeline();
+        } else {
+            animationTimeline();
+        }
+    });
 });
 
 
