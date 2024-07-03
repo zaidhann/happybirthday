@@ -87,7 +87,7 @@ const animationTimeline = () => {
             opacity: 0,
             y: 10
         },
-    "+=3")
+    "+=2")
     .from(".four", 0.7, {
         scale: 0.2,
         opacity: 0,
@@ -271,7 +271,12 @@ const animationTimeline = () => {
     const replyBtn = document.getElementById("replay");
     
     replyBtn.addEventListener("click", () => {
+
         tl.restart();
+        
+        
+        
+        
         
     });
 }
