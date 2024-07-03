@@ -83,7 +83,7 @@ body {
 }
 
 .five .idea-5 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
@@ -103,13 +103,14 @@ body {
 
 .six img {
   display: inline-block;
-  height: 350px;
+  height: 200px;
   max-width: 100%;
   /* height: auto; */
+  border-radius: 50%;
 }
 
 .six .hat {
-  left: 41.5%;
+  left: 37% !important;
   position: absolute;
   /* transform: scale(0.1); */
   top: -35%;
@@ -282,7 +283,7 @@ body {
   }
 
   .wish h5 {
-    font-size: 1.4rem;
+    font-size: 1rem  !important;
   }
 
   .nine p {
